@@ -43,6 +43,9 @@ document.body.appendChild(tags);
 // enhance an existing input:
 tagsInput(document.querySelector('input[type="tags"]'));
 
+// optional limit parameter:
+tagsInput(document.querySelector('input[type="tags"]'), 4);
+
 // or just enhance all tag inputs on the page:
 [].forEach.call(document.querySelectorAll('input[type="tags"]'), tagsInput);
 ```
